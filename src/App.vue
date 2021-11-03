@@ -1,14 +1,19 @@
 <template>
-  <Random />
+  <div>
+    <Random />
+    <FilterList />
+  </div>
 </template>
 
 <script>
+import FilterList from "./components/filterlist/FilterList.vue";
 import Random from "./components/random/Random.vue";
 
 export default {
   name: "App",
   components: {
     Random,
+    FilterList,
   },
 };
 </script>
