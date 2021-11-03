@@ -44,4 +44,8 @@ h5 {
 h6 {
   font-size: 16px;
 }
+
+.medium-text {
+  font-weight: 500;
+}
 </style>

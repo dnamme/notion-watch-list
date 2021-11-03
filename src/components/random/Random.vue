@@ -23,7 +23,7 @@
         <p id="genre">{{ movie.Genre }}</p>
 
         <p id="director-wrapper">
-          <strong>Directed by: </strong>
+          <span id="medium-text">Directed by: </span>
           <span id="director">{{ movie.Director }}</span>
         </p>
         <p id="actors">{{ movie.Actors }}</p>
@@ -31,12 +31,13 @@
         <p id="plot">{{ movie.Plot }}...</p>
 
         <p id="imdb-wrapper">
-          <strong>IMDb: </strong
+          <span class="medium-text">IMDb: </span
           ><span id="imdb-rating">{{ movie.imdbRating }}/10</span>
         </p>
 
         <p v-for="item in movie.Ratings" :key="item.Source">
-          <strong>{{ item.Source }}: </strong><span>{{ item.Value }}</span>
+          <span class="medium-text">{{ item.Source }}: </span
+          ><span>{{ item.Value }}</span>
         </p>
 
         <RandomButton id="random-button" />
